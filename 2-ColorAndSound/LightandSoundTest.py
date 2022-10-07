@@ -16,7 +16,10 @@ def print_sound(indata, outdata, frames, time, status):
     
     #set vol threshold here
     if int(volume_norm) > 10:
-        pixels.fill((255, 0, 0))
+        R = random.randint(0, 255)
+        G = random.randint(0, 255)
+        B = random.randint(0, 255)
+        pixels.fill((R, G, B))
         print("Lights on!")
         
     else:
